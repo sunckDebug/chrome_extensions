@@ -1,0 +1,20 @@
+#demo{
+    position: fixed;
+    float: right;
+    left:60%;
+    top:59%;
+    z-index: 999;
+    margin-left:530px;
+    background: #1E9FFF;
+}
+
+
+#func_1, #func_2, #func_3, #func_4, #func_5, #func_6, #func_7{
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    text-align:center;
+    /* display: table-cell; */
+    vertical-align:middle
+}
+

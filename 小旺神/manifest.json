@@ -1,0 +1,37 @@
+{
+    "name": "甲由旺神",
+    "description" : "甲由旺神1.0",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_icon": "images/icon.png" ,
+        "default_popup": "html/popup.html"
+    },
+
+    "content_scripts" :[
+        {
+            "matches" : ["*://*.tmall.com/item.htm*"],
+            "css": [
+                "css/index.css"
+            ],
+            "js" : [
+                "js/jquery-1.11.3.js" ,
+                "js/jquery.min.js",
+                "js/contentscript.js",
+                "js/addhtml.js",
+                "js/sku.js"
+            ] 
+        }
+    ],
+
+
+    "commands": {
+        "_execute_browser_action": {
+        "suggested_key": {
+            "default": "Ctrl+Shift+F",
+            "mac": "MacCtrl+Shift+F"
+        },
+        "description": "Opens popup.html"
+        }
+    }
+}
